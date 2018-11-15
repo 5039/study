@@ -2,14 +2,11 @@ import Taro, { Component } from '@tarojs/taro'
 import Index from './pages/index'
 
 import './app.scss'
-
-// 微信端的样式设置
 if (process.env.TARO_ENV === "weapp") {
   require("taro-ui/dist/weapp/css/index.css")
 } else if (process.env.TARO_ENV === "h5") {
   require("taro-ui/dist/h5/css/index.css")
 }
-
 
 class App extends Component {
   config = {
@@ -20,7 +17,7 @@ class App extends Component {
     ],
     window: {
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
+      navigationBarBackgroundColor: '#6F9AEA',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
     }
@@ -39,6 +36,7 @@ class App extends Component {
   render () {
     return (
       <Index />
+      // <Question />
     )
   }
 }

@@ -75,7 +75,8 @@ export default class Index extends Component {
               </View>
 
               <View className='ItemlistRight'>
-                <Button type='primary' className='Itembtn-max' size='mini'>拜师</Button>
+                {/* <AtButton type='primary' className='Itembtn-max' size='mini'>拜师</AtButton> */}
+                <Text className='Itembtn-max'>拜师</Text>
               </View>
           </View>
           </AtTabsPane>
