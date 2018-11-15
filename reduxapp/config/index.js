@@ -1,5 +1,5 @@
 const config = {
-  projectName: 'myapp',
+  projectName: 'reduxapp',
   date: '2018-11-15',
   designWidth: 750,
   deviceRatio: {
@@ -24,24 +24,8 @@ const config = {
   },
   defineConstants: {
   },
-  copy: {
-     patterns: [
-    ],
-    options: {
-    }
-  },
   weapp: {
-    module: {
-      postcss: {
-        autoprefixer: {
-          enable: true
-        },
-        url: {
-          enable: true,
-          limit: 10240
-        }
-      }
-    }
+
   },
   h5: {
     publicPath: '/',

@@ -1,8 +1,8 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "myapp",
-  "description": "weapp0.0.1",
-  "appid": "wx96b68d5897c598af",
+  "projectname": "reduxapp",
+  "description": "reduxapp",
+  "appid": "touristappid",
   "setting": {
     "urlCheck": true,
     "es6": false,
