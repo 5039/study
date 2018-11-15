@@ -1,0 +1,122 @@
+.Explain {
+  background-color: #eee;
+  margin-top: 20px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.Explain-right {
+  display: block;
+}
+
+.Explain_word {
+  display: block;
+  color: #191919;
+  font-size: 23px;
+  line-height: 35px;
+}
+.Explain_info {
+  color: #191919;
+  font-size: 23px;
+}
+.Explain_word.rate {
+  color: red;
+}
+
+.Itemlist {
+  padding: 10px 20px;
+  border-bottom: 1px solid #000;
+  // box-sizing: border-box;
+}
+
+// 循环列
+.Itemlist:after{
+  display: block;
+  content:'';
+  clear: both;
+  height:0;
+}
+
+
+.ItemlistLeft {
+  width: 70%;
+  float: left;
+  height: 180px;
+}
+
+.ItemlistRight {
+  float: left;
+  // background-color: yellow;
+  // height: 200px;
+  text-align: center;
+  position: relative;
+  width: 112px;
+  height: 180px;
+}
+.Itembotton {
+  width: 112px;
+  height: 180px;
+  background-color: aquamarine;
+  margin: auto;
+}
+
+.Itemlist_Info {
+  position: relative;
+  // overflow: hidden;
+}
+
+.Itemlist_Info_img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+   position: absolute;
+  left: 0;
+  top: 0;
+}
+.Itemlist_Info_title {
+  position: absolute;
+  font-size: 26px;
+  font-weight: bold;
+  color: #191919;
+  top: 0;
+  left: 75px;
+}
+
+.Itemlist_Info_job {
+  position: absolute;
+  width: 360px;
+  top: 40px;
+  font-size: 23px;
+  left: 75px;
+}
+
+.Itemlist_Info_ction {
+  position: absolute;
+  // display: block;
+  top: 110px;
+  font-size: 23px;
+  width: 450px;
+  left: 0;
+}
+
+.itemsfont {
+  position: absolute;
+  top: 80px;
+  font-size: 23px;
+  width: 450px;
+  left: 0;
+}
+.Itemlist_Info_title, .Itemlist_Info_job {
+  display: block;
+}
+
+.Itembtn-max {
+  margin: auto;
+  width: 170px;
+  height: 60px;
+  position: absolute;
+  color: coral;
+  top: 33%;
+  left: 0;
+  transform: scaleY(50%)
+}
