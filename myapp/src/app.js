@@ -3,11 +3,20 @@ import Index from './pages/index'
 
 import './app.scss'
 
-class App extends Component {
+// 微信端的样式设置
+if (process.env.TARO_ENV === "weapp") {
+  require("taro-ui/dist/weapp/css/index.css")
+} else if (process.env.TARO_ENV === "h5") {
+  require("taro-ui/dist/h5/css/index.css")
+}
 
+
+class App extends Component {
   config = {
     pages: [
-      'pages/index/index'
+      // 主页
+      'pages/index/index',
+      'pages/question/question'
     ],
     window: {
       backgroundTextStyle: 'light',

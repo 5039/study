@@ -23,6 +23,10 @@ export default class Index extends Component {
     })
   }
 
+  navigateTo(url) {
+    Taro.navigateTo({url:url})
+  }
+
   componentWillMount () { }
 
   componentDidMount () { }
@@ -59,7 +63,7 @@ export default class Index extends Component {
           
           <View className='Itemlist'>
               <View className='ItemlistLeft'>
-                <Navigator target='index'>
+                <Navigator target='index' onClick={this.navigateTo.bind(this,'/pages/question/question')}>
                   <View className='Itemlist_Info'>
                     <Image className='Itemlist_Info_img' src={imgtit}></Image>
                     <Text className='Itemlist_Info_title'>Haocker</Text>
@@ -76,7 +80,6 @@ export default class Index extends Component {
           </View>
           </AtTabsPane>
         </AtTabs>
-
       </View>
     )
   }
