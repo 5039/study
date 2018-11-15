@@ -1,5 +1,8 @@
 import Taro, { Component } from '@tarojs/taro'
 import Index from './pages/index'
+import Question from './pages/question/question'
+import { Provider } from 'react-redux'
+import store from './store'
 
 import './app.scss'
 if (process.env.TARO_ENV === "weapp") {
@@ -12,7 +15,7 @@ class App extends Component {
   config = {
     pages: [
       // 主页
-      'pages/index/index',
+      // 'pages/index/index',
       'pages/question/question'
     ],
     window: {
@@ -35,8 +38,10 @@ class App extends Component {
   // 请勿修改此函数
   render () {
     return (
-      <Index />
-      // <Question />
+      <Provider store={store}>
+        {/* //<Index /> */}
+        <Question />
+      </Provider>
     )
   }
 }
