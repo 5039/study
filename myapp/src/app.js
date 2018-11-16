@@ -1,8 +1,8 @@
 import Taro, { Component } from '@tarojs/taro'
 import Index from './pages/index'
 import Question from './pages/question/question'
-import { Provider } from 'react-redux'
-import store from './store'
+// import { Provider } from 'react-redux'
+// import store from './store'
 
 import './app.scss'
 if (process.env.TARO_ENV === "weapp") {
@@ -26,22 +26,19 @@ class App extends Component {
     }
   }
 
-  componentDidMount () {}
+  componentDidMount() { }
 
-  componentDidShow () {}
+  componentDidShow() { }
 
-  componentDidHide () {}
+  componentDidHide() { }
 
-  componentDidCatchError () {}
+  componentDidCatchError() { }
 
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数
-  render () {
+  render() {
     return (
-      <Provider store={store}>
-        {/* //<Index /> */}
-        <Question />
-      </Provider>
+      <Question />
     )
   }
 }

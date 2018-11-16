@@ -1,7 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text, Image} from '@tarojs/components'
 import './question.scss'
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 
 import headPortrait from '../../common/img/touxiang.jpg'
 
@@ -15,7 +15,7 @@ class Question extends Component {
       list: []
     })
   }
-
+  
   componentDidMount() {
     Taro.showLoading({title: '加载中'})
     Taro.request({
@@ -45,7 +45,7 @@ class Question extends Component {
       {/* <View onClick={this.hanDle.bind(this)}>222222222222222222</View> */}
       {/* <View><Text>{this.props.counter.num}</Text></View> */}
       {/* 老师部分 */}
-          <View className='teacher'>
+          {/* <View className='teacher'>
               <View className='teacher-header'>
                   <Image className='teacher-head-img' src={headPortrait}></Image>
               </View>
@@ -55,7 +55,7 @@ class Question extends Component {
               <View className='teacher-message'>
                   <Text className=''>Motto: 我希望软件与程序能帮助更多人更高效的工作</Text>
               </View>
-          </View>
+          </View> */}
         {/* 老师部分结束 */}
         <View className='experience-home'>
             <Text className='experience'>工作经历</Text>
